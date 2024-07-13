@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspnetCore.Diagnostics.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Models.Customers\Models.Customers.csproj" />
+    <ProjectReference Include="..\Back-End\Layer 1\ORM\ORM.CRMSystem\ORM.CRMSystem.csproj" />
+    <ProjectReference Include="..\Back-End\Layer 1\Data Access\DataAccess.CRMSystem\DataAccess.CRMSystem.csproj" />
+    <ProjectReference Include="..\Back-End\Layer 2\Business\Business.CRMSystem\Business.CRMSystem.csproj" />
+    <ProjectReference Include="..\Back-End\Layer 3\Controllers\Controllers.CRMSystem\Controllers.CRMSystem.csproj" />
+  </ItemGroup>
+
+</Project>
